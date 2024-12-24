@@ -162,5 +162,5 @@ function backToHome() {
 
 // Function to open the PDF
 function openPDF() {
-  window.open('https://drive.google.com/file/d/1MaYthl5qqJmJjA7TsReXd2iGy4Nytx1h/view?usp=drivesdk', '_blank');
+  window.open('https://drive.google.com/file/d/1MaYthl5qqJmJjA7TsReXd2iGy4Nytx1h/view', '_blank');
 }
