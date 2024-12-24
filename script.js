@@ -108,7 +108,6 @@ function startMCQ() {
   mcqQuestions = shuffleArray(mcqQuestions); // Shuffle the questions
   showMCQ(content);
 }
-
 // Function to display a single MCQ
 function showMCQ(content) {
   if (currentMCQIndex < mcqQuestions.length) {
@@ -131,27 +130,33 @@ function checkAnswer(selected) {
   const question = mcqQuestions[currentMCQIndex];
   const content = document.getElementById("content");
 
-  // Display feedback for the selected answer
-  if (selected === question.correct) {
-    content.innerHTML += `<p style="color:green;">Correct Answer!</p>`;
-  } else {
-    content.innerHTML += `<p style="color:red;">Wrong Answer. The correct answer is: ${question.correct}</p>`;
-  }
+  // Provide feedback for the selected answer
+  const feedback = selected === question.correct
+    ? `<p style="color:green;">Correct Answer!</p>`
+    : `<p style="color:red;">Wrong Answer. The correct answer is: ${question.correct}</p>`;
+    
+  content.innerHTML += feedback; // Append feedback to the page
 
   // Move to the next question
   currentMCQIndex++;
-  content.innerHTML += `<button onclick="showMCQ(document.getElementById('content'))">Next Question</button>`;
+  
+  // Add the "Next Question" button
+  content.innerHTML += `
+    <button onclick="showMCQ(document.getElementById('content'))" style="margin-top: 20px;">Next Question</button>
+  `;
 }
 
+ 
 // Function to return to the home page
 function backToHome() {
   const content = document.getElementById("content");
   content.innerHTML = `
     <p>Choose an activity to start learning:</p>
-    <button onclick="startFlashCards()">Flashcards</button>
-    <button onclick="startMCQ()">Multiple Choice Questions</button>
-    <br><br>
-    <button onclick="openPDF()">Open Taxonomy PDF</button>
+    <div class="button-container">
+      <button onclick="startFlashCards()">Flashcards</button>
+      <button onclick="startMCQ()">Multiple Choice Questions</button>
+      <button onclick="openPDF()">Open Taxonomy PDF</button>
+    </div>
   `;
 }
 

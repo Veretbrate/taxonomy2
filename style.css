@@ -30,7 +30,7 @@ header .team {
 header .home-btn {
   background-color: white;
   color: #4caf50;
-  border: 2px dashed #4caf50; /* Updated line style */
+  border: 2px solid #4caf50;
   padding: 8px 15px;
   font-size: 1rem;
   cursor: pointer;
@@ -64,27 +64,29 @@ p {
   line-height: 1.6;
 }
 
+/* Button Container for Home Page */
 .button-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  gap: 40px; /* Equal vertical spacing between all buttons */
 }
 
+/* Buttons Styling */
 button {
-  background-color: #ff9800;
+  background-color: #4caf50; /* All buttons are green */
   color: white;
-  border: 2px solid #ff9800; /* Updated line style */
-  padding: 15px 20px;
-  font-size: 1.2rem;
+  border: 2px solid #4caf50;
+  padding: 15px 15px;
+  font-size: 1.1rem;
   cursor: pointer;
   border-radius: 15px;
-  width: 60%;
+  width: 50%; /* Reduced button width for balance */
   transition: background-color 0.3s, transform 0.2s;
 }
 
 button:hover {
-  background-color: #f57c00;
+  background-color: #45a049; /* Slightly darker green on hover */
   transform: scale(1.05);
 }
 
@@ -99,14 +101,4 @@ footer {
   width: 100%;
   text-align: center;
   border-top: 3px solid #45a049;
-}
-
-/* Additional Styling */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
