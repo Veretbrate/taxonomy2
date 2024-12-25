@@ -13,7 +13,7 @@ let flashCards = [
   { question: "What is diploblastic organization?", answer: "Body layers derived from two embryonic tissues." },
   { question: "Name the layers in diploblastic organisms.", answer: "Ectoderm, mesoglea, and endoderm." },
   { question: "Define triploblastic organization.", answer: "Organisms with three layers: ectoderm, mesoderm, and endoderm." },
-  { question: "What are Eumetazoa?", answer: "Animals with true tissues." },
+  { question: "Who is considered the founder of the modern classification system?", answer: "Carl Linnaeus" },
   { question: "Define paraphyletic group.", answer: "A group excluding some descendants of a common ancestor." },
   { question: "What is the significance of mesoderm?", answer: "It gives rise to muscles, bones, and connective tissues." },
   { question: "What is the largest taxonomic rank?", answer: "Kingdom." },
@@ -28,8 +28,8 @@ let flashCards = [
   { question: "What is asymmetry?", answer: "The absence of a central axis or point." },
   { question: "What is radial symmetry?", answer: "Body parts arranged around a central axis." },
   { question: "What is the advantage of bilateral symmetry?", answer: "Allows directional movement and cephalization." },
-  { question: "Name an example of a monophyletic group.", answer: "Mammals." },
-  { question: "Name an example of a polyphyletic group.", answer: "Marine mammals (e.g., whales and seals)." },
+  { question: "Phylogenetic systematics is also known as:", answer: "Cladistics" },
+  { question: "What is the term for a new species' typical specimen deposited in a museum?", answer: "Holotype" },
 ];
 
 // Function to start Flashcards
@@ -72,7 +72,7 @@ let mcqQuestions = [
   { question: "Which rank is broader than genus?", options: ["Species", "Family", "Class", "Order"], correct: "Family" },
   { question: "What does 'monophyletic group' mean?", options: ["Single ancestor", "No ancestor", "Multiple ancestors", "Excluding descendants"], correct: "Single ancestor" },
   { question: "What is a holotype?", options: ["A specimen representing a group", "A typical specimen for a species", "A name for extinct organisms", "An outlier specimen"], correct: "A typical specimen for a species" },
-  { question: "What is radial symmetry?", options: ["Body parts around a central axis", "Mirror-image halves", "Asymmetry", "Centralized structure"], correct: "Body parts around a central axis" },
+  { question: "Which of the following groups shows spiral cleavage during development?", options: ["Deuterostomes", "Protostomes", "Eumetazoa", "Parazoans"], correct: "Protostomes" },
   { question: "What is the significance of the genus?", options: ["It groups closely related species.", "It indicates fossil ancestry.", "It replaces species-level classification.", "It contains only one organism."], correct: "It groups closely related species." },
   { question: "What does phylogeny mean?", options: ["Evolutionary history of a species", "The name of a fossil", "A geological term", "A genetic mutation"], correct: "Evolutionary history of a species" },
   { question: "What is a derived character?", options: ["A trait that arises after a common ancestor", "An ancestral trait", "An unrelated trait", "A non-genetic characteristic"], correct: "A trait that arises after a common ancestor" },
